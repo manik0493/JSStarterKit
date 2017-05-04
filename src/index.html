@@ -4,14 +4,31 @@
     <meta charset="UTF-8">
   </head>
   <body>
-    <div layout="column">
+    <div layout="column" ng-cloak>
     <md-toolbar layout-align="center center">
-      <div class=md-toolbar-tools>
+      <div layout="row" height=100%  class=md-toolbar-tools>
+        <div flex=20>
         <img src="rhpl.gif">
-      </div>
+        </div>
+        <div flex=5>
+          
+        </div>
+        <div flex=60>
+          <md-tabs>
+        <md-tab label="About">
+        
+        </md-tab>
+        <md-tab label="Projects">
+        
+        </md-tab>
+        <md-tab label="Contact us">
+        
+        </md-tab>
+     </md-tabs>
+        </div>
+   
     </md-toolbar>
-
-
+    </div>
     </div>
   </body>
   <script src="bundle.js"></script>

@@ -23860,3 +23860,11 @@ md-tooltip {
 @media print {
   .hide-print:not(.show-print):not(.show) {
     display: none !important; } }
+
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    
+}
