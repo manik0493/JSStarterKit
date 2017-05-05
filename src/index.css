@@ -4,6 +4,7 @@
  * @license MIT
  * v1.1.1
  */
+ @import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css');
 html, body {
   height: 100%;
   position: relative; }
@@ -23866,5 +23867,5 @@ md-tooltip {
 img {
     max-width: 100%;
     height: auto;
-    
+
 }

@@ -4,14 +4,16 @@
   "description": "JavaScript development environment Pluralsight course by Cory House",
   "scripts": {
     "prestart": "babel-node buildScripts/startMessage.js",
-    "start":"npm-run-all --parallel security-check open:src",
-    "lint":"esw webpack.config.*, src, buildScripts --color",
-    "open:src":"babel-node buildScripts/srcServer.js",
-    "security-check":"nsp check"
+    "start": "npm-run-all --parallel security-check open:src",
+    "lint": "esw webpack.config.*, src, buildScripts --color",
+    "open:src": "babel-node buildScripts/srcServer.js",
+    "security-check": "nsp check"
   },
   "author": "Manik Narang",
   "license": "MIT",
   "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1",
     "whatwg-fetch": "1.0.0"
   },
   "devDependencies": {

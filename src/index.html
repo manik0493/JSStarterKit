@@ -1,35 +1,59 @@
 <!DOCTYPE html>
 <html ng-app="MyApp" ng-controller="MainController as ctrl" lang="en">
-  <head>
-    <meta charset="UTF-8">
-  </head>
-  <body>
-    <div layout="column" ng-cloak>
-    <md-toolbar layout-align="center center">
-      <div layout="row" height=100%  class=md-toolbar-tools>
-        <div flex=20>
-        <img src="rhpl.gif">
+
+<head>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <div layout="column" height=100% ng-cloak>
+    <div flex=20>
+      <md-toolbar layout-align="center center">
+        <div layout="row" height=100% class=md-toolbar-tools>
+          <div flex=20>
+            <img src="rhpl.gif">
+          </div>
+          <div flex=5></div>
+          <div flex=60>
+            <md-content class="md-padding">
+              <md-nav-bar md-selected-nav-item="currentNavItem" nav-bar-aria-label="navigation links">
+                <md-nav-item md-nav-click="goto('page1')" name="page1">About</md-nav-item>
+                <md-nav-item md-nav-click="goto('page2')" name="page2">Projects</md-nav-item>
+                <md-nav-item md-nav-click="goto('page3')" name="page3">Products</md-nav-item>
+                <md-nav-item md-nav-click="goto('page4')" name="page4">Contact us</md-nav-item>
+              </md-nav-bar>
+            </md-content>
+          </div>
         </div>
-        <div flex=5>
-          
-        </div>
-        <div flex=60>
-          <md-tabs>
-        <md-tab label="About">
-        
-        </md-tab>
-        <md-tab label="Projects">
-        
-        </md-tab>
-        <md-tab label="Contact us">
-        
-        </md-tab>
-     </md-tabs>
-        </div>
-   
-    </md-toolbar>
+      </md-toolbar>
     </div>
-    </div>
-  </body>
-  <script src="bundle.js"></script>
+    <div flex=80 height=100%>
+      <div height=100%>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="la.jpg" alt="Los Angeles">
+            </div>
+
+            <div class="item">
+              <img src="chicago.jpg" alt="Chicago">
+            </div>
+
+            <div class="item">
+              <img src="ny.jpg" alt="New York">
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+<script src="bundle.js"></script>
+
 </html>
