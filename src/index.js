@@ -14,7 +14,7 @@ function MainController()
 angular.module('MyApp',['ngMaterial']).controller("MainController",MainController);
 
 angular.module('MyApp').component('introPage',{
-templateUrl:'introPage.html',
+templateUrl:'templates/IntroPage/introPage.html',
 controller: intro,
 controllerAs:'ip'
 });
