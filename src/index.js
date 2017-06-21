@@ -5,7 +5,7 @@ import path from 'path';
 import angularmaterial from  'angular-material';
 import 'jquery';
 import 'bootstrap/dist/js/bootstrap';
-import intro from './IntroPage/intropage.js'
+
 function MainController()
 {
 
@@ -19,4 +19,4 @@ controller: intro,
 controllerAs:'ip'
 });
 
-
+import intro from './IntroPage/intropage.js'
